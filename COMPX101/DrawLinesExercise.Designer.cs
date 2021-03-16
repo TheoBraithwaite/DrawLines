@@ -30,7 +30,6 @@
         {
             this.buttonDrawLine = new System.Windows.Forms.Button();
             this.pictureBoxDisplay = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDisplay)).BeginInit();
             this.SuspendLayout();
             // 
@@ -53,23 +52,11 @@
             this.pictureBoxDisplay.TabIndex = 1;
             this.pictureBoxDisplay.TabStop = false;
             // 
-            // label1
-            // 
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label1.Location = new System.Drawing.Point(12, 428);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(776, 17);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Scratch Pad";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
             // FormDrawLines
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBoxDisplay);
             this.Controls.Add(this.buttonDrawLine);
             this.Name = "FormDrawLines";
@@ -83,7 +70,6 @@
 
         private System.Windows.Forms.Button buttonDrawLine;
         private System.Windows.Forms.PictureBox pictureBoxDisplay;
-        private System.Windows.Forms.Label label1;
     }
 }
 
