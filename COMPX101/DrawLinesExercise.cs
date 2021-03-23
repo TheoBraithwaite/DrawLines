@@ -30,9 +30,25 @@ namespace COMPX101
             //Create a red pen with a width of 2
             //Pen pen2 = new Pen(Color.Red, 2);
 
+            Point startPoint = new Point(10, 30);
+            Point endPoint = new Point(100, 200);
+            Point thirdPoint = new Point(150, 100);
+            int x = 140;
+            int y = 50;
 
-            //Draws a line using the pen specified and
-            //Using the coordinates specified.
+            //Draw a blue line between the 2 point objects.
+            paper.DrawLine(pen1, startPoint, endPoint);
+
+            //Draw a second blue line from endPoint to thirdPoint.
+            paper.DrawLine(pen1, endPoint, thirdPoint);
+
+            //Draws a rectangle at the coordinates specified and the width and height specified
+            //x and y being the top left hand corner of the rectangle, 100 being the width and 50 being the height.
+            paper.DrawRectangle(pen1, x, y, 100, 50);
+
+            ////Draws a line using the pen specified and
+            ////Using the coordinates specified.
+
             paper.DrawLine(pen1, 10, 30, 100, 200);
 
             //Change the colour of pen1 to red
@@ -44,6 +60,7 @@ namespace COMPX101
             //Draw a red line
             paper.DrawLine(pen1, 150, 100, 250, 200);
 
+            //Draw line from top left to bottom right
             paper.DrawLine(pen1, 0, 0, pictureBoxDisplay.Width, pictureBoxDisplay.Height);
 
             ////Ex 6 - It draws a triangle
